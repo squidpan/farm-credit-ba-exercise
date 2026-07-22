@@ -1,0 +1,101 @@
+@startuml
+title E6-01 — Propose and Approve Debt Transaction\nSuccessful Approval Sequence
+
+hide footbox
+autonumber "<b>[00]"
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam responseMessageBelowArrow true
+skinparam maxMessageSize 35
+
+skinparam ParticipantPadding 55
+skinparam BoxPadding 25
+
+skinparam sequence {
+  ArrowThickness 1.2
+  ParticipantFontSize 14
+  ActorFontSize 14
+  MessageFontSize 13
+  LifeLineBorderColor Black
+}
+
+actor "Issuance\nOfficer" as Officer
+
+box "Debt Issuance Platform"
+  boundary "Transaction\nWorkspace" as Workspace
+  control "Validation\nService" as Validation
+  control "Approval\nWorkflow" as Workflow
+  database "Transaction and\nAudit Repository" as Repository
+end box
+
+actor "Treasury\nApprover" as Approver
+
+== Create Proposal ==
+
+Officer -> Workspace : Enter proposed\ntransaction terms
+
+note over Officer, Workspace
+Product type
+Principal amount
+Rate or spread
+Trade and settlement dates
+Maturity date
+end note
+
+Workspace -> Repository : Save draft
+Repository --> Workspace : Transaction ID\nStatus = Draft
+
+Workspace --> Officer : Draft saved
+
+== Validate Proposal ==
+
+Officer -> Workspace : Request validation
+
+Workspace -> Validation : Validate terms\nand business rules
+
+Validation -> Repository : Read product rules\nand reference data
+Repository --> Validation : Rules and limits
+
+Validation --> Workspace : Valid
+
+Workspace --> Officer : Validation passed
+
+== Submit for Approval ==
+
+Officer -> Workspace : Submit proposal
+
+Workspace -> Workflow : Create approval request
+
+Workflow -> Repository : Lock submitted version\nStatus = Submitted
+
+Repository --> Workflow : Version recorded
+
+Workflow --> Approver : Notify approval request
+
+== Review and Approve ==
+
+Approver -> Workflow : Open submitted proposal
+
+Workflow -> Repository : Retrieve terms,\nvalidation and history
+Repository --> Workflow : Approval package
+
+Workflow --> Approver : Present approval package
+
+Approver -> Workflow : Approve transaction
+
+Workflow -> Repository : Record approval\nStatus = Approved
+
+Repository --> Workflow : Approval recorded
+
+== Notify Outcome ==
+
+Workflow --> Officer : Transaction approved
+
+note over Officer, Approver
+Separation of duties:
+the proposer and approver
+are different authorized users.
+end note
+
+@enduml

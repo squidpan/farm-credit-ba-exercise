@@ -1,0 +1,54 @@
+@startuml
+title E6-01 — Propose and Approve Debt Transaction\nBusiness Decision Flow
+
+skinparam shadowing false
+skinparam defaultTextAlignment center
+skinparam ArrowThickness 1.3
+
+start
+
+:Draft Transaction Created;
+
+:Business Rules Validation;
+
+if (Required\ninformation complete?) then (Yes)
+
+    if (Business rules\nsatisfied?) then (Yes)
+
+        :Submit for Approval;
+
+        if (Approver\nAccepts?) then (Yes)
+
+            :Transaction Approved;
+
+            :Ready for\nSecurity Preparation;
+
+            stop
+
+        else (No)
+
+            :Return with\nBusiness Reason;
+
+            :Revise Proposal;
+
+            --> Business Rules Validation
+
+        endif
+
+    else (No)
+
+        :Correct Business\nRule Violations;
+
+        --> Business Rules Validation
+
+    endif
+
+else (No)
+
+    :Complete Missing\nInformation;
+
+    --> Business Rules Validation
+
+endif
+
+@enduml

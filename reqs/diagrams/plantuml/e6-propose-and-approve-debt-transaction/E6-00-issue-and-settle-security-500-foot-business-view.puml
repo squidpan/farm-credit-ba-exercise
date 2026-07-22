@@ -1,0 +1,59 @@
+@startuml
+title E6 — Issue and Settle Security\n500-Foot Business View
+
+skinparam shadowing false
+skinparam activity {
+  BackgroundColor White
+  BorderColor Black
+  DiamondBackgroundColor White
+  DiamondBorderColor Black
+  FontSize 14
+}
+skinparam defaultTextAlignment center
+skinparam ArrowThickness 1.2
+
+|Issuance Team|
+start
+:Propose debt\ntransaction;
+
+|Treasury Approver|
+:Review terms\nand approve;
+
+|Debt Issuance Platform|
+:Prepare security\nand identifier;
+
+|Settlement Operations|
+:Submit issuance and\nsettlement instruction;
+
+|Federal Reserve\nBook-Entry Infrastructure|
+:Issue security and\nsettle DVP;
+
+|Dealer / Investor|
+:Receive security\nand provide cash;
+
+|Debt Issuance Platform|
+:Receive settlement\nstatus and proceeds;
+
+|Finance / Accounting|
+:Reconcile cash,\nsecurity and accounting;
+
+|Debt Issuance Platform|
+:Close transaction\nand retain audit trail;
+
+stop
+
+legend bottom
+|= Stage |= Primary information |
+| Propose | Amount, product, rate, dates |
+| Approve | Authorization and controls |
+| Prepare | CUSIP and security terms |
+| Settle | Security exchanged for cash |
+| Reconcile | Cash, quantity and accounting |
+| Close | Final status and audit history |
+
+DVP = Delivery versus Payment
+The Federal Reserve provides book-entry and settlement infrastructure.
+The investor or settlement participant provides the purchase cash.
+endlegend
+
+@enduml

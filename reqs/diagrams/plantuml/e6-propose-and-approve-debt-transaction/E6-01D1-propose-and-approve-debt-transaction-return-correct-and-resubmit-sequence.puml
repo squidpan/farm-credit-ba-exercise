@@ -1,0 +1,142 @@
+@startuml
+title E6-01 — Propose and Approve Debt Transaction\nReturn, Correct and Resubmit Sequence
+
+hide footbox
+autonumber "<b>[00]"
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam responseMessageBelowArrow true
+skinparam maxMessageSize 35
+
+skinparam ParticipantPadding 55
+skinparam BoxPadding 25
+
+skinparam sequence {
+  ArrowThickness 1.2
+  ParticipantFontSize 14
+  ActorFontSize 14
+  MessageFontSize 13
+  LifeLineBorderColor Black
+}
+
+actor "Issuance\nOfficer" as Officer
+
+box "Debt Issuance Platform"
+  boundary "Transaction\nWorkspace" as Workspace
+  control "Validation\nService" as Validation
+  control "Approval\nWorkflow" as Workflow
+  database "Transaction and\nAudit Repository" as Repository
+end box
+
+actor "Treasury\nApprover" as Approver
+
+== Review Submitted Proposal ==
+
+Approver -> Workflow : Open submitted\nproposal
+
+Workflow -> Repository : Retrieve submitted\nversion and history
+
+Repository --> Workflow : Terms, validation\nand prior changes
+
+Workflow --> Approver : Present approval\npackage
+
+Approver -> Workflow : Return for changes\nwith reason
+
+Workflow -> Repository : Record return decision\nStatus = Changes Required
+
+Repository --> Workflow : Decision recorded
+
+Workflow --> Officer : Notify changes required
+
+note over Officer, Approver
+Return reason should be
+specific enough to support
+a clear correction.
+end note
+
+== Correct Proposal ==
+
+Officer -> Workspace : Open returned\ntransaction
+
+Workspace -> Repository : Retrieve editable\nworking version
+
+Repository --> Workspace : Returned terms\nand approver comments
+
+Workspace --> Officer : Display correction\nrequirements
+
+Officer -> Workspace : Update transaction\nterms
+
+Workspace -> Repository : Save revised draft\nas new version
+
+Repository --> Workspace : New version saved
+
+== Revalidate ==
+
+Officer -> Workspace : Request validation
+
+Workspace -> Validation : Validate revised\nterms
+
+Validation -> Repository : Read rules,\nlimits and references
+
+Repository --> Validation : Current rules\nand limits
+
+alt Revised proposal is valid
+
+  Validation --> Workspace : Valid
+
+  Workspace --> Officer : Validation passed
+
+else Revised proposal is still invalid
+
+  Validation --> Workspace : Validation errors
+
+  Workspace --> Officer : Display errors
+
+  note over Officer, Workspace
+  Officer corrects remaining
+  issues before resubmission.
+  end note
+
+end
+
+== Resubmit ==
+
+Officer -> Workspace : Submit revised\nproposal
+
+Workspace -> Workflow : Create new\napproval request
+
+Workflow -> Repository : Lock revised version\nStatus = Submitted
+
+Repository --> Workflow : Version recorded
+
+Workflow --> Approver : Notify resubmission
+
+== Approve Revised Version ==
+
+Approver -> Workflow : Review revised\nproposal
+
+Workflow -> Repository : Retrieve current and\nprior versions
+
+Repository --> Workflow : Revised terms and\nchange comparison
+
+Workflow --> Approver : Present revision\nsummary
+
+Approver -> Workflow : Approve revised\ntransaction
+
+Workflow -> Repository : Record approval\nStatus = Approved
+
+Repository --> Workflow : Approval recorded
+
+Workflow --> Officer : Revised transaction\napproved
+
+note over Workflow, Repository
+Audit history retains:
+- original submitted version
+- return reason
+- revised values
+- resubmission
+- final approval
+end note
+
+@enduml

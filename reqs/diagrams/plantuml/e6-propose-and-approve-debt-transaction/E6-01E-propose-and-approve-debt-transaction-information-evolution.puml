@@ -1,0 +1,81 @@
+@startuml
+title E6-01 — Propose and Approve Debt Transaction\nTransaction Information Evolution
+
+top to bottom direction
+
+skinparam shadowing false
+skinparam linetype ortho
+skinparam defaultTextAlignment center
+skinparam nodesep 80
+skinparam ranksep 90
+skinparam padding 18
+
+skinparam rectangle {
+  FontSize 14
+  MinimumWidth 230
+}
+
+rectangle "Draft Transaction\n\nInitial business terms captured" as Draft
+
+rectangle "Validated Transaction\n\nCompleteness and business rules confirmed" as Validated
+
+rectangle "Submitted Version\n\nTerms locked for approval review" as Submitted
+
+rectangle "APPROVAL DECISION\n\nApprove or return?" as Decision
+
+rectangle "Returned Transaction\n\nReason and required changes recorded" as Returned
+
+rectangle "Revised Version\n\nCorrections captured as a new version" as Revised
+
+rectangle "Approved Transaction\n\nAuthorized terms become official" as Approved
+
+rectangle "Ready for\nSecurity Preparation" as Ready
+
+Draft --> Validated : Validate
+Validated --> Submitted : Submit
+Submitted --> Decision : Review
+
+Decision --> Approved : Approve
+Decision --> Returned : Return
+
+Returned --> Revised : Correct
+Revised --> Validated : Revalidate
+
+Approved --> Ready : Release
+
+note right of Draft
+Core information includes:
+
+- Product type
+- Principal amount
+- Coupon or spread
+- Trade date
+- Settlement date
+- Maturity date
+end note
+
+note right of Submitted
+The submitted version is
+preserved and cannot be
+silently changed during review.
+end note
+
+note right of Approved
+The approved version includes:
+
+- Final transaction terms
+- Approver identity
+- Decision timestamp
+- Complete audit history
+end note
+
+legend bottom
+|= Information stage |= Meaning |
+| Draft | Proposed terms may still be edited |
+| Validated | Required data and rules have passed |
+| Submitted | A controlled version is awaiting approval |
+| Returned | Corrections are required and explained |
+| Approved | The authorized version becomes the official record |
+endlegend
+
+@enduml

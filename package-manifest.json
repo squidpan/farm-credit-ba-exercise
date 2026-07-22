@@ -1,0 +1,12 @@
+{
+  "package": "farm-credit-e6-approved-plantuml-and-guides",
+  "created": "2026-07-22",
+  "approved_puml_count": 9,
+  "guide_count": 9,
+  "canonical_actor_view": "more-space variant",
+  "retained_control_views": [
+    "detailed",
+    "compact"
+  ],
+  "source_zip": "farm-credit-e6-plantuml-pack-v2-2026-0722(1).zip"
+}

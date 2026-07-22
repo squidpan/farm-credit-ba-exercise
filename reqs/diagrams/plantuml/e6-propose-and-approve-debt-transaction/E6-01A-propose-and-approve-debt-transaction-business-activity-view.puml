@@ -1,0 +1,101 @@
+@startuml
+title E6-01 — Propose and Approve Debt Transaction\nBusiness Activity View
+
+skinparam shadowing false
+skinparam defaultTextAlignment center
+skinparam ArrowThickness 1.2
+skinparam activity {
+  BackgroundColor White
+  BorderColor Black
+  DiamondBackgroundColor White
+  DiamondBorderColor Black
+  FontSize 14
+}
+
+|Issuance Officer|
+start
+
+:Create draft debt\ntransaction;
+
+note right
+Core terms:
+- product type
+- principal amount
+- trade date
+- settlement date
+- maturity date
+- rate or spread
+end note
+
+:Save draft;
+
+|Debt Issuance Platform|
+:Assign transaction ID\nand Draft status;
+
+:Validate required fields\nand business rules;
+
+if (Valid?) then (Yes)
+
+  |Issuance Officer|
+  :Review validation\nresults;
+
+  :Submit transaction\nfor approval;
+
+  |Debt Issuance Platform|
+  :Lock submitted version;
+
+  :Create approval request;
+
+  |Treasury Approver|
+  :Review terms,\nrisks and exceptions;
+
+  if (Approve?) then (Approve)
+
+    :Approve transaction;
+
+    |Debt Issuance Platform|
+    :Set status to\nApproved;
+
+    :Record approval,\nuser and timestamp;
+
+    stop
+
+  else (Return)
+
+    :Return for correction\nwith reason;
+
+    |Debt Issuance Platform|
+    :Set status to\nChanges Required;
+
+    |Issuance Officer|
+    :Revise transaction;
+
+    --> Save draft;
+
+  endif
+
+else (No)
+
+  |Debt Issuance Platform|
+  :Display validation\nerrors;
+
+  |Issuance Officer|
+  :Correct invalid or\nmissing terms;
+
+  --> Save draft;
+
+endif
+
+legend bottom
+|= Status |= Meaning |
+| Draft | Transaction can be edited |
+| Submitted | Awaiting approval |
+| Changes Required | Returned for correction |
+| Approved | Ready for security preparation |
+
+Key control:
+The user who creates or changes a transaction
+should not approve the same transaction.
+endlegend
+
+@enduml

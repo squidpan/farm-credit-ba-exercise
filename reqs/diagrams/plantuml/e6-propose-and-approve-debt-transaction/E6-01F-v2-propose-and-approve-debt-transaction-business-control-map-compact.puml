@@ -1,0 +1,63 @@
+@startuml
+title E6-01 — Propose and Approve Debt Transaction\nBusiness Control Map
+
+top to bottom direction
+
+skinparam shadowing false
+skinparam linetype ortho
+skinparam defaultTextAlignment center
+
+skinparam nodesep 45
+skinparam ranksep 55
+skinparam padding 10
+
+skinparam rectangle {
+  FontSize 13
+  MinimumWidth 180
+}
+
+rectangle "Draft Transaction" as Draft
+
+rectangle "CONTROL 1\n\nData Quality\n\n• Required fields\n• Business rules\n• Limits" as Control1
+
+rectangle "Validated Transaction" as Validated
+
+rectangle "CONTROL 2\n\nSubmission Integrity\n\n• Create version\n• Lock terms\n• Record submitter" as Control2
+
+rectangle "Submitted Transaction" as Submitted
+
+rectangle "CONTROL 3\n\nApproval Governance\n\n• Authority\n• Separation of duties\n• Review package" as Control3
+
+rectangle "Approval Decision\n\nApprove or return?" as Decision
+
+rectangle "CONTROL 4\n\nAudit Integrity\n\n• Record decision\n• Preserve history\n• Notify users" as Control4
+
+rectangle "Approved Transaction" as Approved
+
+rectangle "Ready for\nSecurity Preparation" as Ready
+
+Draft --> Control1
+Control1 --> Validated
+
+Validated --> Control2
+Control2 --> Submitted
+
+Submitted --> Control3
+Control3 --> Decision
+
+Decision --> Control4 : Approve
+Control4 --> Approved
+
+Approved --> Ready
+
+Decision --> Draft : Return
+
+legend bottom
+|= Control |= Purpose |
+| 1 | Validate completeness, rules and limits |
+| 2 | Protect the submitted version |
+| 3 | Enforce authority and separation of duties |
+| 4 | Preserve the decision and audit history |
+endlegend
+
+@enduml

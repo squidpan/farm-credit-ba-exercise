@@ -1,0 +1,91 @@
+@startuml
+title E6-01 — Propose and Approve Debt Transaction\nBusiness Control Map
+
+top to bottom direction
+
+skinparam shadowing false
+skinparam linetype ortho
+skinparam defaultTextAlignment center
+skinparam nodesep 85
+skinparam ranksep 95
+skinparam padding 18
+
+skinparam rectangle {
+  FontSize 14
+  MinimumWidth 250
+}
+
+rectangle "Draft Transaction" as Draft
+
+rectangle "CONTROL 1\n\nDATA QUALITY AND ELIGIBILITY\n\nRequired fields\nProduct rules\nDate validation\nReference data\nTransaction limits" as Control1
+
+rectangle "Validated Transaction" as Validated
+
+rectangle "CONTROL 2\n\nSUBMISSION INTEGRITY\n\nValid status required\nSubmitted version created\nTerms locked for review\nSubmitter recorded\nTimestamp recorded" as Control2
+
+rectangle "Submitted Transaction" as Submitted
+
+rectangle "CONTROL 3\n\nAPPROVAL GOVERNANCE\n\nAuthorized approver\nApproval authority limits\nSegregation of duties\nComplete review package\nReturn reason required" as Control3
+
+rectangle "Approval Decision\n\nApprove or return?" as Decision
+
+rectangle "CONTROL 4\n\nRECORD AND AUDIT INTEGRITY\n\nDecision retained\nVersion history retained\nStatus updated\nParticipants notified\nApproved terms protected" as Control4
+
+rectangle "Approved Transaction" as Approved
+
+rectangle "Ready for\nSecurity Preparation" as Ready
+
+Draft --> Control1
+Control1 --> Validated
+
+Validated --> Control2
+Control2 --> Submitted
+
+Submitted --> Control3
+Control3 --> Decision
+
+Decision --> Control4 : Approve
+Control4 --> Approved
+
+Approved --> Ready
+
+Decision --> Draft : Return for revision
+
+note right of Control1
+Prevents incomplete,
+ineligible, or internally
+inconsistent transactions.
+end note
+
+note right of Control2
+Creates a controlled
+snapshot for approval.
+end note
+
+note right of Control3
+Prevents unauthorized
+approval and conflicts
+between proposal and approval.
+end note
+
+note right of Control4
+Preserves evidence of
+what was approved,
+by whom, and when.
+end note
+
+legend bottom
+|= Control point |= Primary purpose |
+| Control 1 | Ensure transaction data is complete and eligible |
+| Control 2 | Protect the submitted version |
+| Control 3 | Enforce approval authority and segregation of duties |
+| Control 4 | Preserve the decision and audit evidence |
+
+Each control should trace to:
+• Business rules
+• Acceptance criteria
+• Test cases
+• Audit evidence
+endlegend
+
+@enduml
