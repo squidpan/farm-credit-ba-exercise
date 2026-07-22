@@ -162,10 +162,7 @@ The Issuance Officer identifies the need to propose a new debt transaction.
 - [[US-E6-002-validate-proposed-transaction]]
 - [[US-E6-003-submit-transaction-for-approval]]
 - [[US-E6-004-review-debt-transaction]]
-- [[US-E6-005-return-transaction-for-revision]]
-- [[US-E6-006-correct-and-resubmit-transaction]]
-- [[US-E6-007-approve-debt-transaction]]
-- [[US-E6-008-maintain-transaction-approval-history]]
+- [[US-E6-005-correct-and-resubmit-returned-transaction]]
 
 ## Related Diagrams
 
@@ -177,3 +174,8 @@ The Issuance Officer identifies the need to propose a new debt transaction.
 - [[E6-01E-propose-and-approve-debt-transaction-information-evolution]]
 - [[E6-01F-v1-propose-and-approve-debt-transaction-business-control-map-detailed]]
 - [[E6-01F-v2-propose-and-approve-debt-transaction-business-control-map-compact]]
+
+## Supporting Requirements Artifacts
+
+- [[BR-FEATURE-E6-01]]
+- [[REVIEW-FEATURE-E6-01-requirements-walkthrough]]
