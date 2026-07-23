@@ -19,10 +19,10 @@ tags:
 description: Requirements walkthrough of FEATURE-E6-01 to verify completeness, consistency, traceability, and implementation readiness.
 
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
-# REVIEW — FEATURE-E6-01 Requirements Walkthrough
+# REVIEW-FEATURE-E6-01 Requirements Walkthrough
 
 ## Purpose
 
@@ -61,11 +61,11 @@ The following activities are intentionally excluded:
 
 | Story | Responsibility |
 |---------|----------------|
-| US-E6-001 | Create Draft |
-| US-E6-002 | Validate Draft |
-| US-E6-003 | Submit for Approval |
-| US-E6-004 | Review Transaction |
-| US-E6-005 | Correct and Resubmit |
+| US-E6-101 | Create Draft |
+| US-E6-102 | Validate Draft |
+| US-E6-103 | Submit for Approval |
+| US-E6-104 | Review Transaction |
+| US-E6-105 | Correct and Resubmit |
 
 **Result**
 

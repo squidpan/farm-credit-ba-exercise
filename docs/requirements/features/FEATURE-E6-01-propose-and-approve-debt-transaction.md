@@ -158,11 +158,11 @@ The Issuance Officer identifies the need to propose a new debt transaction.
 
 ## Proposed Story Decomposition
 
-- [[US-E6-001-propose-new-debt-transaction]]
-- [[US-E6-002-validate-proposed-transaction]]
-- [[US-E6-003-submit-transaction-for-approval]]
-- [[US-E6-004-review-debt-transaction]]
-- [[US-E6-005-correct-and-resubmit-returned-transaction]]
+- [[US-E6-101-propose-new-debt-transaction]]
+- [[US-E6-102-validate-proposed-transaction]]
+- [[US-E6-103-submit-transaction-for-approval]]
+- [[US-E6-104-review-debt-transaction]]
+- [[US-E6-105-correct-and-resubmit-returned-transaction]]
 
 ## Related Diagrams
 

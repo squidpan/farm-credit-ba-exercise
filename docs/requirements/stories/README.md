@@ -45,17 +45,17 @@ US-<epic>-<sequence>-<description>.md
 
 Example:
 
-US-E6-001-propose-new-debt-transaction.md
+US-E6-101-propose-new-debt-transaction.md
 
 ## Story Inventory
 
 | ID | Title | Status |
 |----|-------|--------|
-| US-E6-001 | Propose New Debt Transaction | Planned |
-| US-E6-002 | Validate Proposed Transaction | Planned |
-| US-E6-003 | Submit Transaction for Approval | Planned |
-| US-E6-004 | Review Debt Transaction | Planned |
-| US-E6-005 | Return Transaction for Revision | Planned |
+| US-E6-101 | Propose New Debt Transaction | Planned |
+| US-E6-102 | Validate Proposed Transaction | Planned |
+| US-E6-103 | Submit Transaction for Approval | Planned |
+| US-E6-104 | Review Debt Transaction | Planned |
+| US-E6-105 | Correct and Resubmit Returned Transaction | Planned |
 
 ## Governance Status
 
