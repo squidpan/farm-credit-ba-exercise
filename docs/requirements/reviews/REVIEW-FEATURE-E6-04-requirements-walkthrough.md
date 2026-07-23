@@ -140,4 +140,4 @@ These open items do not prevent approval of the current feature-level requiremen
 
 **Approved**
 
-The E6-04 feature is ready to serve as the basis for study, stakeholder discussion, detailed analysis, process modeling, and future implementation planning. 
+The E6-04 feature is ready to serve as the basis for study, stakeholder discussion, detailed analysis, process modeling, and future implementation planning.
