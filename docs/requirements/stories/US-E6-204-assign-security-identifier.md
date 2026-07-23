@@ -1,7 +1,7 @@
 ---
 id: US-E6-204
-type: Story
-status: Draft
+type: user-story
+status: draft
 
 feature: FEATURE-E6-02
 
@@ -11,7 +11,7 @@ categories:
 
 tags:
 
-summary: Assign a unique security identifier to a planned issuance after funding capacity has been reserved.
+description: Assign a unique security identifier to a planned issuance after funding capacity has been reserved.
 
 created:
 updated:

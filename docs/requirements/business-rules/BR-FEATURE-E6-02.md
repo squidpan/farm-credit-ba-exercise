@@ -1,7 +1,7 @@
 ---
 id: BR-FEATURE-E6-02
-type: Business-Rule
-status: Draft
+type: business-rule
+status: approved
 
 feature: FEATURE-E6-02
 
@@ -11,7 +11,7 @@ categories:
 
 tags:
 
-summary: Business rules governing issuance scheduling, validation, capacity reservation, identifier assignment, and booking.
+description: Business rules governing issuance scheduling, validation, capacity reservation, identifier assignment, and booking.
 
 created:
 updated:

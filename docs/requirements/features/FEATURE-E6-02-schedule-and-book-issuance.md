@@ -1,7 +1,7 @@
 ---
 id: FEATURE-E6-02
-type: Feature
-status: Draft
+type: feature
+status: draft
 
 epic: E6
 
@@ -11,7 +11,7 @@ categories:
 
 tags:
 
-summary: Schedule, validate, reserve capacity for, identify, and book a planned debt issuance.
+description: Schedule, validate, reserve capacity for, identify, and book a planned debt issuance.
 
 created:
 updated:

@@ -1,7 +1,7 @@
 ---
 id: US-E6-201
-type: Story
-status: Draft
+type: user-story
+status: draft
 
 feature: FEATURE-E6-02
 
@@ -11,7 +11,7 @@ categories:
 
 tags:
 
-summary: Schedule an approved debt transaction as a proposed issuance.
+description: Schedule an approved debt transaction as a proposed issuance.
 
 created:
 updated:

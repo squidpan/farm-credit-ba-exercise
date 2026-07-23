@@ -1,7 +1,7 @@
 ---
 id: US-E6-203
-type: Story
-status: Draft
+type: user-story
+status: draft
 
 feature: FEATURE-E6-02
 
@@ -11,7 +11,7 @@ categories:
 
 tags:
 
-summary: Reserve sufficient funding capacity for a validated planned issuance.
+description: Reserve sufficient funding capacity for a validated planned issuance.
 
 created:
 updated:

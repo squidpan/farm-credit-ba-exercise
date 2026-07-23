@@ -1,7 +1,7 @@
 ---
 id: US-E6-202
-type: Story
-status: Draft
+type: user-story
+status: draft
 
 feature: FEATURE-E6-02
 
@@ -11,7 +11,7 @@ categories:
 
 tags:
 
-summary: Validate that the proposed issuance date complies with funding calendars and operational constraints.
+description: Validate that the proposed issuance date complies with funding calendars and operational constraints.
 
 created:
 updated:

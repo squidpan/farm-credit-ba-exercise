@@ -1,7 +1,7 @@
 ---
 id: US-E6-205
-type: Story
-status: Draft
+type: user-story
+status: draft
 
 feature: FEATURE-E6-02
 
@@ -11,7 +11,7 @@ categories:
 
 tags:
 
-summary: Book a validated planned issuance after funding capacity and security identification are complete.
+description: Book a validated planned issuance after funding capacity and security identification are complete.
 
 created:
 updated:

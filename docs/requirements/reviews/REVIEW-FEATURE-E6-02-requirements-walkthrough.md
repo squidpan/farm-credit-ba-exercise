@@ -1,7 +1,7 @@
 ---
 id: REVIEW-FEATURE-E6-02
-type: Requirements-Review
-status: Draft
+type: review
+status: approved
 
 feature: FEATURE-E6-02
 
@@ -11,7 +11,7 @@ categories:
 
 tags:
 
-summary: Requirements walkthrough checklist for FEATURE-E6-02 Schedule and Book Issuance.
+description: Requirements walkthrough checklist for FEATURE-E6-02 Schedule and Book Issuance.
 
 created:
 updated:
