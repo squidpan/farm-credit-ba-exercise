@@ -1,20 +1,25 @@
 ---
 id: US-E6-204
-type: user-story
+project: farm-credit-ba-exercise
+
+type: story
 status: draft
 
-feature: FEATURE-E6-02
+description: Assign a unique security identifier to a planned issuance after funding capacity has been reserved.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
+  - farm-credit
+  - requirements
 
-description: Assign a unique security identifier to a planned issuance after funding capacity has been reserved.
+created: 2026-07-23
+updated: 2026-07-23
 
-created:
-updated:
+epic: EPIC-E6
+feature: FEATURE-E6-02
 ---
 
 # US-E6-204 Assign Security Identifier
@@ -25,7 +30,7 @@ Assign a unique security identifier before the planned issuance is booked.
 
 ---
 
-# User Story
+## User Story
 
 As a Funding Operations Analyst,
 
@@ -35,22 +40,22 @@ so that the security can be tracked consistently throughout booking, execution, 
 
 ---
 
-# Business Value
+## Business Value
 
 A unique security identifier prevents duplicate records and provides a consistent reference across downstream issuance and settlement activities.
 
 ---
 
-# Scope
+## Scope
 
-## Included
+### Included
 
 - Generate or obtain a security identifier
 - Validate identifier uniqueness
 - Associate the identifier with the planned issuance
 - Record identifier assignment
 
-## Excluded
+### Excluded
 
 - Booking the planned issuance
 - Market execution
@@ -59,20 +64,20 @@ A unique security identifier prevents duplicate records and provides a consisten
 
 ---
 
-# Related Artifacts
+## Related Artifacts
 
-## Parent Feature
+### Parent Feature
 
 - [[FEATURE-E6-02-schedule-and-book-issuance]]
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 - [[AC-E6-204]]
 
-## Business Rules
+### Business Rules
 
 - [[BR-FEATURE-E6-02]]
 
 ---
 
-# Notes
+## Notes

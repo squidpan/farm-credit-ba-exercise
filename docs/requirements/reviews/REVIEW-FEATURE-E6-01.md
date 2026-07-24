@@ -1,25 +1,27 @@
 ---
 id: REVIEW-FEATURE-E6-01
 project: farm-credit-ba-exercise
+
 type: review
 status: approved
 
-feature: FEATURE-E6-01
+description: Requirements walkthrough of FEATURE-E6-01 to verify completeness, consistency, traceability, and implementation readiness.
 
 categories:
   - "[[Reviews]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
   - farm-credit
   - requirements
   - walkthrough
   - review
 
-description: Requirements walkthrough of FEATURE-E6-01 to verify completeness, consistency, traceability, and implementation readiness.
-
 created: 2026-07-22
 updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-01
 ---
 
 # REVIEW-FEATURE-E6-01 Requirements Walkthrough
@@ -32,7 +34,7 @@ The review focuses on requirement quality rather than implementation design.
 
 ---
 
-# Scope
+## Scope
 
 The feature covers:
 
@@ -57,7 +59,7 @@ The following activities are intentionally excluded:
 
 ---
 
-# Story Decomposition
+## Story Decomposition
 
 | Story | Responsibility |
 |---------|----------------|
@@ -73,7 +75,7 @@ The following activities are intentionally excluded:
 
 ---
 
-# Business Workflow
+## Business Workflow
 
 ```text
 Draft
@@ -105,7 +107,7 @@ Resubmit
 
 ---
 
-# Traceability
+## Traceability
 
 The feature provides traceability between:
 
@@ -121,7 +123,7 @@ The feature provides traceability between:
 
 ---
 
-# Testability
+## Testability
 
 Acceptance Criteria use the Given / When / Then format and define observable behavior.
 
@@ -131,7 +133,7 @@ Acceptance Criteria use the Given / When / Then format and define observable beh
 
 ---
 
-# Overall Assessment
+## Overall Assessment
 
 | Area | Assessment |
 |------|------------|
@@ -145,6 +147,6 @@ Acceptance Criteria use the Given / When / Then format and define observable beh
 
 ---
 
-# Conclusion
+## Conclusion
 
 FEATURE-E6-01 is considered complete from a business requirements perspective and is ready to support design, implementation, and testing.

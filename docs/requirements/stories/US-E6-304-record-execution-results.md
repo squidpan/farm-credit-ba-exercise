@@ -1,20 +1,25 @@
 ---
 id: US-E6-304
-type: user-story
+project: farm-credit-ba-exercise
+
+type: story
 status: draft
 
-feature: FEATURE-E6-03
+description: Records the final execution and allocation results for downstream settlement processing.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
+  - farm-credit
+  - requirements
 
-description: Records the final execution and allocation results for downstream settlement processing.
+created: 2026-07-23
+updated: 2026-07-23
 
-created:
-updated:
+epic: EPIC-E6
+feature: FEATURE-E6-03
 ---
 
 # US-E6-304 Record Execution Results

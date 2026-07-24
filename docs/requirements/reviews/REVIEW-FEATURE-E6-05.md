@@ -1,18 +1,25 @@
 ---
 id: REVIEW-FEATURE-E6-05
+project: farm-credit-ba-exercise
+
 type: review
 status: approved
 
-feature: FEATURE-E6-05
-
 description: Records the completeness, consistency, traceability, and approval review of the E6-05 Post-Trade Reporting requirements set.
-
-created: 2026-07-23
-updated: 2026-07-23
 
 categories:
   - "[[Reviews]]"
   - "[[Requirements]]"
+  - "[[Reference Exercises]]"
+tags:
+  - farm-credit
+  - requirements
+
+created: 2026-07-23
+updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-05
 ---
 
 # REVIEW-FEATURE-E6-05 Post-Trade Reporting Requirements Review

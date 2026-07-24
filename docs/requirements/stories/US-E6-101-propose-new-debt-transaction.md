@@ -1,27 +1,28 @@
 ---
 id: US-E6-101
 project: farm-credit-ba-exercise
-type: user-story
+
+type: story
 status: draft
 
-epic: EPIC-E6
-feature: FEATURE-E6-01
+description: Enables an authorized Issuance Officer to create and preserve a new debt transaction in Draft status.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
   - "[[Reference Exercises]]"
-
 tags:
   - farm-credit
+  - requirements
   - debt-issuance
   - proposal
   - user-story
 
-description: Enables an authorized Issuance Officer to create and preserve a new debt transaction in Draft status.
-
 created: 2026-07-22
 updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-01
 ---
 
 # US-E6-101 Propose New Debt Transaction
@@ -32,7 +33,7 @@ Create a uniquely identified and traceable Draft transaction containing the init
 
 ---
 
-# User Story
+## User Story
 
 As an Issuance Officer,
 
@@ -42,15 +43,15 @@ so that the debt issuance process can begin using complete and traceable busines
 
 ---
 
-# Business Value
+## Business Value
 
 Establishes the initial controlled and traceable business record required to begin the debt issuance workflow.
 
 ---
 
-# Scope
+## Scope
 
-## Included
+### Included
 
 - Authorize creation of a debt transaction
 - Capture the initial required transaction information
@@ -61,7 +62,7 @@ Establishes the initial controlled and traceable business record required to beg
 - Identify potential active duplicates
 - Make the Draft transaction available for validation
 
-## Excluded
+### Excluded
 
 - Detailed transaction validation
 - Submission for approval
@@ -73,31 +74,31 @@ Establishes the initial controlled and traceable business record required to beg
 
 ---
 
-# Related Artifacts
+## Related Artifacts
 
-## Parent Feature
+### Parent Feature
 
 - [[FEATURE-E6-01-propose-and-approve-debt-transaction]]
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 - [[AC-E6-101]]
 
-## Business Rules
+### Business Rules
 
 - [[BR-FEATURE-E6-01]]
 
-## Related Diagrams
+### Related Diagrams
 
 - [[E6-01A-propose-and-approve-debt-transaction-business-activity-view]]
 - [[E6-01E-propose-and-approve-debt-transaction-information-evolution]]
 
-## Next Story
+### Next Story
 
 - [[US-E6-102-validate-proposed-transaction]]
 
 ---
 
-# Notes
+## Notes
 
 The transaction remains in Draft status until the validation requirements defined by US-E6-102 are satisfied.

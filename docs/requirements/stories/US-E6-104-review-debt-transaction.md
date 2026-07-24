@@ -1,28 +1,29 @@
 ---
 id: US-E6-104
 project: farm-credit-ba-exercise
-type: user-story
+
+type: story
 status: draft
 
-epic: EPIC-E6
-feature: FEATURE-E6-01
+description: Enables an authorized reviewer to evaluate a submitted debt transaction and record an approval decision.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
   - "[[Reference Exercises]]"
-
 tags:
   - farm-credit
+  - requirements
   - debt-issuance
   - approval
   - review
   - user-story
 
-description: Enables an authorized reviewer to evaluate a submitted debt transaction and record an approval decision.
-
 created: 2026-07-22
 updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-01
 ---
 
 # US-E6-104 Review Debt Transaction
@@ -33,7 +34,7 @@ Enable an authorized reviewer to evaluate a submitted debt transaction and eithe
 
 ---
 
-# User Story
+## User Story
 
 As an authorized reviewer,
 
@@ -43,15 +44,15 @@ so that the proposed issuance is either approved to proceed or returned for corr
 
 ---
 
-# Business Value
+## Business Value
 
 Provides independent oversight of proposed debt transactions and ensures that only acceptable transactions proceed beyond the approval stage.
 
 ---
 
-# Scope
+## Scope
 
-## Included
+### Included
 
 - Authorize review of a Pending Approval transaction
 - Present submitted transaction information
@@ -66,7 +67,7 @@ Provides independent oversight of proposed debt transactions and ensures that on
 - Prevent duplicate decisions
 - Preserve the reviewed transaction version
 
-## Excluded
+### Excluded
 
 - Creation or validation of the Draft transaction
 - Submission into the approval workflow
@@ -78,21 +79,21 @@ Provides independent oversight of proposed debt transactions and ensures that on
 
 ---
 
-# Related Artifacts
+## Related Artifacts
 
-## Parent Feature
+### Parent Feature
 
 - [[FEATURE-E6-01-propose-and-approve-debt-transaction]]
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 - [[AC-E6-104]]
 
-## Business Rules
+### Business Rules
 
 - [[BR-FEATURE-E6-01]]
 
-## Related Diagrams
+### Related Diagrams
 
 - [[E6-01B-propose-and-approve-debt-transaction-actor-and-decision-view]]
 - [[E6-01C-propose-and-approve-debt-transaction-successful-approval-sequence]]
@@ -100,16 +101,16 @@ Provides independent oversight of proposed debt transactions and ensures that on
 - [[E6-01D2-propose-and-approve-debt-transaction-business-decision-flow]]
 - [[E6-01F-v1-propose-and-approve-debt-transaction-business-control-map-detailed]]
 
-## Previous Story
+### Previous Story
 
 - [[US-E6-103-submit-transaction-for-approval]]
 
-## Next Story
+### Next Story
 
 - [[US-E6-105-correct-and-resubmit-returned-transaction]]
 
 ---
 
-# Notes
+## Notes
 
 The reviewer records a decision against the submitted transaction version. The reviewer does not directly change the submitted business terms.

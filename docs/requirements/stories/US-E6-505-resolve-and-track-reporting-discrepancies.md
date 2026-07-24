@@ -1,18 +1,25 @@
 ---
 id: US-E6-505
-type: user-story
+project: farm-credit-ba-exercise
+
+type: story
 status: draft
 
-feature: FEATURE-E6-05
-
 description: Enables an authorized analyst to investigate, resolve, and track reporting discrepancies identified during post-trade reconciliation.
-
-created: 2026-07-23
-updated: 2026-07-23
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
+  - "[[Reference Exercises]]"
+tags:
+  - farm-credit
+  - requirements
+
+created: 2026-07-23
+updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-05
 ---
 
 # US-E6-505 Resolve and Track Reporting Discrepancies

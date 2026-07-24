@@ -1,14 +1,25 @@
 ---
 id: BR-FEATURE-E6-04
+project: farm-credit-ba-exercise
+
 type: business-rule
 status: approved
 
-feature: FEATURE-E6-04
-
 description: Defines the business rules governing dealer confirmation, settlement instructions, settlement processing, exception resolution, and final settlement completion.
+
+categories:
+  - "[[Business Rules]]"
+  - "[[Requirements]]"
+  - "[[Reference Exercises]]"
+tags:
+  - farm-credit
+  - requirements
 
 created: 2026-07-23
 updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-04
 ---
 
 # BR-FEATURE-E6-04 Confirm and Settle Issuance

@@ -1,14 +1,25 @@
 ---
 id: REVIEW-FEATURE-E6-04
+project: farm-credit-ba-exercise
+
 type: review
 status: approved
 
-feature: FEATURE-E6-04
-
 description: Records the requirements review and approval outcome for the Confirm and Settle Issuance feature and its supporting artifacts.
+
+categories:
+  - "[[Reviews]]"
+  - "[[Requirements]]"
+  - "[[Reference Exercises]]"
+tags:
+  - farm-credit
+  - requirements
 
 created: 2026-07-23
 updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-04
 ---
 
 # REVIEW-FEATURE-E6-04 Confirm and Settle Issuance

@@ -1,21 +1,24 @@
 ---
 id: FEATURE-E6-04
+project: farm-credit-ba-exercise
+
 type: feature
 status: draft
 
-epic: E6
+description: Enables an executed and allocated issuance to be confirmed, instructed, settled, and recorded as complete.
 
 categories:
   - "[[Features]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
-
-description: Enables an executed and allocated issuance to be confirmed, instructed, settled, and recorded as complete.
+  - farm-credit
+  - requirements
 
 created: 2026-07-23
 updated: 2026-07-23
 
+epic: EPIC-E6
 ---
 
 # FEATURE-E6-04 Confirm and Settle Issuance

@@ -1,20 +1,25 @@
 ---
 id: US-E6-202
-type: user-story
+project: farm-credit-ba-exercise
+
+type: story
 status: draft
 
-feature: FEATURE-E6-02
+description: Validate that the proposed issuance date complies with funding calendars and operational constraints.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
+  - farm-credit
+  - requirements
 
-description: Validate that the proposed issuance date complies with funding calendars and operational constraints.
+created: 2026-07-23
+updated: 2026-07-23
 
-created:
-updated:
+epic: EPIC-E6
+feature: FEATURE-E6-02
 ---
 
 # US-E6-202 Validate Issuance Window
@@ -25,7 +30,7 @@ Validate the proposed issuance window before operational resources are committed
 
 ---
 
-# User Story
+## User Story
 
 As an Issuance Officer,
 
@@ -35,21 +40,21 @@ so that debt issuances occur only on approved funding days and do not conflict w
 
 ---
 
-# Business Value
+## Business Value
 
 Validation prevents invalid or conflicting issuance schedules before funding capacity and operational resources are committed.
 
 ---
 
-# Scope
+## Scope
 
-## Included
+### Included
 
 - Funding calendar validation
 - Holiday validation
 - Operational conflict validation
 
-## Excluded
+### Excluded
 
 - Funding capacity reservation
 - Security identifier assignment
@@ -57,20 +62,20 @@ Validation prevents invalid or conflicting issuance schedules before funding cap
 
 ---
 
-# Related Artifacts
+## Related Artifacts
 
-## Parent Feature
+### Parent Feature
 
 - [[FEATURE-E6-02-schedule-and-book-issuance]]
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 - [[AC-E6-202]]
 
-## Business Rules
+### Business Rules
 
 - [[BR-FEATURE-E6-02]]
 
 ---
 
-# Notes
+## Notes

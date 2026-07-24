@@ -1,20 +1,25 @@
 ---
 id: REVIEW-FEATURE-E6-03
+project: farm-credit-ba-exercise
+
 type: review
 status: approved
 
-feature: FEATURE-E6-03
+description: Records the requirements walkthrough and approval for Feature E6-03 Execute and Allocate Issuance.
 
 categories:
   - "[[Reviews]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
+  - farm-credit
+  - requirements
 
-description: Records the requirements walkthrough and approval for Feature E6-03 Execute and Allocate Issuance.
+created: 2026-07-23
+updated: 2026-07-23
 
-created:
-updated:
+epic: EPIC-E6
+feature: FEATURE-E6-03
 ---
 
 # REVIEW-FEATURE-E6-03 Requirements Walkthrough

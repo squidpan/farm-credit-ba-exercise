@@ -1,28 +1,29 @@
 ---
 id: US-E6-103
 project: farm-credit-ba-exercise
-type: user-story
+
+type: story
 status: draft
 
-epic: EPIC-E6
-feature: FEATURE-E6-01
+description: Enables an authorized Issuance Officer to submit a validated debt transaction for independent approval.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
   - "[[Reference Exercises]]"
-
 tags:
   - farm-credit
+  - requirements
   - debt-issuance
   - approval
   - workflow
   - user-story
 
-description: Enables an authorized Issuance Officer to submit a validated debt transaction for independent approval.
-
 created: 2026-07-22
 updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-01
 ---
 
 # US-E6-103 Submit Transaction for Approval
@@ -33,7 +34,7 @@ Submit an eligible and currently validated Draft transaction into the independen
 
 ---
 
-# User Story
+## User Story
 
 As an Issuance Officer,
 
@@ -43,15 +44,15 @@ so that an authorized reviewer can evaluate the proposed issuance before it proc
 
 ---
 
-# Business Value
+## Business Value
 
 Ensures every proposed debt issuance receives an independent business review before it proceeds to execution.
 
 ---
 
-# Scope
+## Scope
 
-## Included
+### Included
 
 - Authorize submission of the transaction
 - Confirm that the transaction has a current successful validation result
@@ -62,7 +63,7 @@ Ensures every proposed debt issuance receives an independent business review bef
 - Protect submitted business information from direct modification
 - Prevent duplicate submission
 
-## Excluded
+### Excluded
 
 - Creation of the initial Draft transaction
 - Detailed transaction validation
@@ -75,37 +76,37 @@ Ensures every proposed debt issuance receives an independent business review bef
 
 ---
 
-# Related Artifacts
+## Related Artifacts
 
-## Parent Feature
+### Parent Feature
 
 - [[FEATURE-E6-01-propose-and-approve-debt-transaction]]
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 - [[AC-E6-103]]
 
-## Business Rules
+### Business Rules
 
 - [[BR-FEATURE-E6-01]]
 
-## Related Diagrams
+### Related Diagrams
 
 - [[E6-01A-propose-and-approve-debt-transaction-business-activity-view]]
 - [[E6-01C-propose-and-approve-debt-transaction-successful-approval-sequence]]
 - [[E6-01D2-propose-and-approve-debt-transaction-business-decision-flow]]
 - [[E6-01E-propose-and-approve-debt-transaction-information-evolution]]
 
-## Previous Story
+### Previous Story
 
 - [[US-E6-102-validate-proposed-transaction]]
 
-## Next Story
+### Next Story
 
 - [[US-E6-104-review-debt-transaction]]
 
 ---
 
-# Notes
+## Notes
 
 The transaction must have a current successful validation result at the time of submission. After submission, governed business information remains protected until the transaction is approved or returned for correction.

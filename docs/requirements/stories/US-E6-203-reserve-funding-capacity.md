@@ -1,20 +1,25 @@
 ---
 id: US-E6-203
-type: user-story
+project: farm-credit-ba-exercise
+
+type: story
 status: draft
 
-feature: FEATURE-E6-02
+description: Reserve sufficient funding capacity for a validated planned issuance.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
+  - farm-credit
+  - requirements
 
-description: Reserve sufficient funding capacity for a validated planned issuance.
+created: 2026-07-23
+updated: 2026-07-23
 
-created:
-updated:
+epic: EPIC-E6
+feature: FEATURE-E6-02
 ---
 
 # US-E6-203 Reserve Funding Capacity
@@ -25,7 +30,7 @@ Reserve sufficient funding capacity before the planned issuance can be booked.
 
 ---
 
-# User Story
+## User Story
 
 As a Funding Operations Analyst,
 
@@ -35,21 +40,21 @@ so that the planned issuance aligns with funding strategy and available liquidit
 
 ---
 
-# Business Value
+## Business Value
 
 Funding capacity reservation ensures that planned debt issuances remain within approved funding objectives before market execution.
 
 ---
 
-# Scope
+## Scope
 
-## Included
+### Included
 
 - Verify funding capacity
 - Reserve available funding capacity
 - Record reservation
 
-## Excluded
+### Excluded
 
 - Security identifier assignment
 - Booking the planned issuance
@@ -57,20 +62,20 @@ Funding capacity reservation ensures that planned debt issuances remain within a
 
 ---
 
-# Related Artifacts
+## Related Artifacts
 
-## Parent Feature
+### Parent Feature
 
 - [[FEATURE-E6-02-schedule-and-book-issuance]]
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 - [[AC-E6-203]]
 
-## Business Rules
+### Business Rules
 
 - [[BR-FEATURE-E6-02]]
 
 ---
 
-# Notes
+## Notes

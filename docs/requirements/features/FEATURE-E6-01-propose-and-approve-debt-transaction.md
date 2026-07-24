@@ -1,25 +1,28 @@
 ---
 id: FEATURE-E6-01
 project: farm-credit-ba-exercise
+
 type: feature
 status: draft
-epic: EPIC-E6
+
+description: Allow an authorized user to propose a debt transaction and route it through validation, independent review, correction, resubmission, and approval.
 
 categories:
   - "[[Features]]"
   - "[[Requirements]]"
   - "[[Reference Exercises]]"
-
 tags:
   - farm-credit
+  - requirements
   - debt-issuance
   - transaction-approval
   - business-analysis
   - interview-study
 
-description: Allow an authorized user to propose a debt transaction and route it through validation, independent review, correction, resubmission, and approval.
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-23
+
+epic: EPIC-E6
 ---
 
 # FEATURE-E6-01 — Propose and Approve Debt Transaction

@@ -1,20 +1,25 @@
 ---
 id: US-E6-205
-type: user-story
+project: farm-credit-ba-exercise
+
+type: story
 status: draft
 
-feature: FEATURE-E6-02
+description: Book a validated planned issuance after funding capacity and security identification are complete.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
+  - farm-credit
+  - requirements
 
-description: Book a validated planned issuance after funding capacity and security identification are complete.
+created: 2026-07-23
+updated: 2026-07-23
 
-created:
-updated:
+epic: EPIC-E6
+feature: FEATURE-E6-02
 ---
 
 # US-E6-205 Book Planned Issuance
@@ -25,7 +30,7 @@ Create the official planned issuance record after all scheduling prerequisites a
 
 ---
 
-# User Story
+## User Story
 
 As a Funding Operations Analyst,
 
@@ -35,15 +40,15 @@ so that the approved issuance is recorded and available for execution and downst
 
 ---
 
-# Business Value
+## Business Value
 
 Booking creates the authoritative issuance record used by execution, allocation, settlement, reporting, and lifecycle processes.
 
 ---
 
-# Scope
+## Scope
 
-## Included
+### Included
 
 - Confirm scheduling prerequisites
 - Create the planned issuance record
@@ -51,7 +56,7 @@ Booking creates the authoritative issuance record used by execution, allocation,
 - Record the user or process that completed the booking
 - Set the planned issuance to booked status
 
-## Excluded
+### Excluded
 
 - Market execution
 - Investor allocation
@@ -61,20 +66,20 @@ Booking creates the authoritative issuance record used by execution, allocation,
 
 ---
 
-# Related Artifacts
+## Related Artifacts
 
-## Parent Feature
+### Parent Feature
 
 - [[FEATURE-E6-02-schedule-and-book-issuance]]
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 - [[AC-E6-205]]
 
-## Business Rules
+### Business Rules
 
 - [[BR-FEATURE-E6-02]]
 
 ---
 
-# Notes
+## Notes

@@ -1,27 +1,30 @@
 ---
 id: BR-FEATURE-E6-01
 project: farm-credit-ba-exercise
+
 type: business-rule
 status: approved
 
-feature: FEATURE-E6-01
+description: Business rules governing the proposal and approval workflow for debt transactions.
 
 categories:
   - "[[Business Rules]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
   - farm-credit
+  - requirements
   - business-rules
   - debt-issuance
 
-description: Business rules governing the proposal and approval workflow for debt transactions.
-
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-01
 ---
 
-# Business Rules — FEATURE-E6-01
+# BR-FEATURE-E6-01 — Business Rules for FEATURE-E6-01
 
 | Rule ID | Business Rule |
 |---------|---------------|

@@ -1,20 +1,25 @@
 ---
 id: US-E6-405
-type: user-story
+project: farm-credit-ba-exercise
+
+type: story
 status: draft
 
-feature: FEATURE-E6-04
+description: Enables a Settlement Operations Analyst to verify and record final cash and securities settlement for an issuance.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
-
-description: Enables a Settlement Operations Analyst to verify and record final cash and securities settlement for an issuance.
+  - farm-credit
+  - requirements
 
 created: 2026-07-23
 updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-04
 ---
 
 # US-E6-405 Record Settlement Completion

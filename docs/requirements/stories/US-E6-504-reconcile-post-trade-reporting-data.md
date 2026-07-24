@@ -1,18 +1,25 @@
 ---
 id: US-E6-504
-type: user-story
+project: farm-credit-ba-exercise
+
+type: story
 status: draft
 
-feature: FEATURE-E6-05
-
 description: Enables a reporting or operations analyst to reconcile post-trade report data against authoritative transaction and settlement records.
-
-created: 2026-07-23
-updated: 2026-07-23
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
+  - "[[Reference Exercises]]"
+tags:
+  - farm-credit
+  - requirements
+
+created: 2026-07-23
+updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-05
 ---
 
 # US-E6-504 Reconcile Post-Trade Reporting Data

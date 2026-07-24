@@ -1,20 +1,25 @@
 ---
 id: BR-FEATURE-E6-03
+project: farm-credit-ba-exercise
+
 type: business-rule
 status: approved
 
-feature: FEATURE-E6-03
+description: Defines the business rules governing execution, dealer-order capture, allocation, and finalization of an issuance.
 
 categories:
   - "[[Business Rules]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
+  - farm-credit
+  - requirements
 
-description: Defines the business rules governing execution, dealer-order capture, allocation, and finalization of an issuance.
+created: 2026-07-23
+updated: 2026-07-23
 
-created:
-updated:
+epic: EPIC-E6
+feature: FEATURE-E6-03
 ---
 
 # BR-FEATURE-E6-03 Execute and Allocate Issuance

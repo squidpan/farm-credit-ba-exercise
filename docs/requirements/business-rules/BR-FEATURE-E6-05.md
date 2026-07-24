@@ -1,18 +1,25 @@
 ---
 id: BR-FEATURE-E6-05
+project: farm-credit-ba-exercise
+
 type: business-rule
 status: approved
 
-feature: FEATURE-E6-05
-
 description: Defines the governing business rules for generating, distributing, reconciling, resolving, and archiving post-trade reporting records.
-
-created: 2026-07-23
-updated: 2026-07-23
 
 categories:
   - "[[Business Rules]]"
   - "[[Requirements]]"
+  - "[[Reference Exercises]]"
+tags:
+  - farm-credit
+  - requirements
+
+created: 2026-07-23
+updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-05
 ---
 
 # BR-FEATURE-E6-05 Post-Trade Reporting Business Rules

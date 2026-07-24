@@ -1,20 +1,24 @@
 ---
 id: FEATURE-E6-02
+project: farm-credit-ba-exercise
+
 type: feature
 status: draft
 
-epic: E6
+description: Schedule, validate, reserve capacity for, identify, and book a planned debt issuance.
 
 categories:
   - "[[Features]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
+  - farm-credit
+  - requirements
 
-description: Schedule, validate, reserve capacity for, identify, and book a planned debt issuance.
+created: 2026-07-23
+updated: 2026-07-23
 
-created:
-updated:
+epic: EPIC-E6
 ---
 
 # FEATURE-E6-02 Schedule and Book Issuance
@@ -25,7 +29,7 @@ Convert an approved debt transaction into a validated and booked planned issuanc
 
 ---
 
-# Feature Description
+## Feature Description
 
 This feature supports the operational preparation of an approved debt transaction.
 
@@ -33,13 +37,13 @@ The workflow begins when an Issuance Officer schedules the proposed issuance. Th
 
 ---
 
-# Business Objective
+## Business Objective
 
 Provide a controlled and traceable process for preparing an approved debt transaction for execution.
 
 ---
 
-# Business Value
+## Business Value
 
 This feature:
 
@@ -52,7 +56,7 @@ This feature:
 
 ---
 
-# Primary Actors
+## Primary Actors
 
 - Issuance Officer
 - Funding Operations Analyst
@@ -60,7 +64,7 @@ This feature:
 
 ---
 
-# Preconditions
+## Preconditions
 
 - The proposed debt transaction has completed the required approval process
 - Required transaction information is available
@@ -69,15 +73,15 @@ This feature:
 
 ---
 
-# Trigger
+## Trigger
 
 An approved debt transaction is ready to be scheduled for issuance.
 
 ---
 
-# Scope
+## Scope
 
-## Included
+### Included
 
 - Schedule the proposed issuance
 - Validate the issuance window
@@ -86,7 +90,7 @@ An approved debt transaction is ready to be scheduled for issuance.
 - Book the planned issuance
 - Record processing and rejection information
 
-## Excluded
+### Excluded
 
 - Debt transaction proposal and approval
 - Market execution
@@ -98,7 +102,7 @@ An approved debt transaction is ready to be scheduled for issuance.
 
 ---
 
-# Functional Flow
+## Functional Flow
 
 1. The Issuance Officer schedules the proposed issuance.
 2. The system validates the proposed issuance window.
@@ -109,7 +113,7 @@ An approved debt transaction is ready to be scheduled for issuance.
 
 ---
 
-# Stories
+## Stories
 
 - [[US-E6-201-schedule-issuance]]
 - [[US-E6-202-validate-issuance-window]]
@@ -119,7 +123,7 @@ An approved debt transaction is ready to be scheduled for issuance.
 
 ---
 
-# Acceptance Criteria
+## Acceptance Criteria
 
 - [[AC-E6-201]]
 - [[AC-E6-202]]
@@ -129,19 +133,19 @@ An approved debt transaction is ready to be scheduled for issuance.
 
 ---
 
-# Business Rules
+## Business Rules
 
 - [[BR-FEATURE-E6-02]]
 
 ---
 
-# Review
+## Review
 
 - [[REVIEW-FEATURE-E6-02-requirements-walkthrough]]
 
 ---
 
-# Completion Conditions
+## Completion Conditions
 
 FEATURE-E6-02 is complete when:
 
@@ -154,4 +158,4 @@ FEATURE-E6-02 is complete when:
 
 ---
 
-# Notes
+## Notes

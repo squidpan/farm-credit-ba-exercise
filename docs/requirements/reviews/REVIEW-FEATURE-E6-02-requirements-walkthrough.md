@@ -1,20 +1,25 @@
 ---
 id: REVIEW-FEATURE-E6-02
+project: farm-credit-ba-exercise
+
 type: review
 status: approved
 
-feature: FEATURE-E6-02
+description: Requirements walkthrough checklist for FEATURE-E6-02 Schedule and Book Issuance.
 
 categories:
   - "[[Reviews]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
+  - farm-credit
+  - requirements
 
-description: Requirements walkthrough checklist for FEATURE-E6-02 Schedule and Book Issuance.
+created: 2026-07-23
+updated: 2026-07-23
 
-created:
-updated:
+epic: EPIC-E6
+feature: FEATURE-E6-02
 ---
 
 # REVIEW-FEATURE-E6-02 Requirements Walkthrough
@@ -25,7 +30,7 @@ Walk through the complete FEATURE-E6-02 requirements package and confirm that th
 
 ---
 
-# Review Objective
+## Review Objective
 
 Confirm that the requirements for scheduling and booking an issuance:
 
@@ -38,13 +43,13 @@ Confirm that the requirements for scheduling and booking an issuance:
 
 ---
 
-# Artifacts in Scope
+## Artifacts in Scope
 
-## Feature
+### Feature
 
 - [[FEATURE-E6-02-schedule-and-book-issuance]]
 
-## Stories
+### Stories
 
 - [[US-E6-201-schedule-issuance]]
 - [[US-E6-202-validate-issuance-window]]
@@ -52,7 +57,7 @@ Confirm that the requirements for scheduling and booking an issuance:
 - [[US-E6-204-assign-security-identifier]]
 - [[US-E6-205-book-planned-issuance]]
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 - [[AC-E6-201]]
 - [[AC-E6-202]]
@@ -60,15 +65,15 @@ Confirm that the requirements for scheduling and booking an issuance:
 - [[AC-E6-204]]
 - [[AC-E6-205]]
 
-## Business Rules
+### Business Rules
 
 - [[BR-FEATURE-E6-02]]
 
 ---
 
-# Walkthrough Agenda
+## Walkthrough Agenda
 
-## 1. Feature Scope
+### 1. Feature Scope
 
 Confirm that the feature covers:
 
@@ -89,7 +94,7 @@ Confirm that the feature does not include:
 
 ---
 
-## 2. Story Review
+### 2. Story Review
 
 ### US-E6-201 Schedule Issuance
 
@@ -137,7 +142,7 @@ Confirm that:
 
 ---
 
-# Acceptance Criteria Review
+## Acceptance Criteria Review
 
 Confirm that every acceptance criterion:
 
@@ -150,7 +155,7 @@ Confirm that every acceptance criterion:
 
 ---
 
-# Business Rules Review
+## Business Rules Review
 
 Confirm that the business rules address:
 
@@ -168,7 +173,7 @@ Confirm that the business rules address:
 
 ---
 
-# Traceability Review
+## Traceability Review
 
 Confirm the following links are complete:
 
@@ -181,7 +186,7 @@ Confirm the following links are complete:
 
 ---
 
-# Review Questions
+## Review Questions
 
 - Are all required issuance scheduling fields identified?
 - What calendars define an authorized funding day?
@@ -196,23 +201,23 @@ Confirm the following links are complete:
 
 ---
 
-# Review Outcomes
+## Review Outcomes
 
-## Approved
+### Approved
 
 The requirements package is complete and may proceed to design, implementation planning, and test preparation.
 
-## Approved with Changes
+### Approved with Changes
 
 The requirements package may proceed after the documented changes are completed.
 
-## Rework Required
+### Rework Required
 
 The requirements package requires material revision and another walkthrough.
 
 ---
 
-# Review Record
+## Review Record
 
 | Field | Value |
 |---|---|
@@ -226,7 +231,7 @@ The requirements package requires material revision and another walkthrough.
 
 ---
 
-# Findings
+## Findings
 
 | ID | Artifact | Finding | Owner | Status |
 |---|---|---|---|---|
@@ -234,7 +239,7 @@ The requirements package requires material revision and another walkthrough.
 
 ---
 
-# Decisions
+## Decisions
 
 | ID | Decision | Decision Owner | Date |
 |---|---|---|---|
@@ -242,7 +247,7 @@ The requirements package requires material revision and another walkthrough.
 
 ---
 
-# Action Items
+## Action Items
 
 | ID | Action | Owner | Due Date | Status |
 |---|---|---|---|---|
@@ -250,7 +255,7 @@ The requirements package requires material revision and another walkthrough.
 
 ---
 
-# Related Artifacts
+## Related Artifacts
 
 - [[FEATURE-E6-02-schedule-and-book-issuance]]
 - [[BR-FEATURE-E6-02]]

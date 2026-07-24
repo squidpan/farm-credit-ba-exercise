@@ -1,20 +1,25 @@
 ---
 id: US-E6-302
-type: user-story
+project: farm-credit-ba-exercise
+
+type: story
 status: draft
 
-feature: FEATURE-E6-03
+description: Enables authorized dealers to submit orders for an executed debt issuance.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
+  - farm-credit
+  - requirements
 
-description: Enables authorized dealers to submit orders for an executed debt issuance.
+created: 2026-07-23
+updated: 2026-07-23
 
-created:
-updated:
+epic: EPIC-E6
+feature: FEATURE-E6-03
 ---
 
 # US-E6-302 Receive Dealer Orders

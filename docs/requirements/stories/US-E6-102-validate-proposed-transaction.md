@@ -1,27 +1,28 @@
 ---
 id: US-E6-102
 project: farm-credit-ba-exercise
-type: user-story
+
+type: story
 status: draft
 
-epic: EPIC-E6
-feature: FEATURE-E6-01
+description: Validates a proposed debt transaction and identifies issues that must be corrected before submission.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
   - "[[Reference Exercises]]"
-
 tags:
   - farm-credit
+  - requirements
   - debt-issuance
   - validation
   - user-story
 
-description: Validates a proposed debt transaction and identifies issues that must be corrected before submission.
-
 created: 2026-07-22
 updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-01
 ---
 
 # US-E6-102 Validate Proposed Transaction
@@ -32,7 +33,7 @@ Validate a Draft debt transaction and identify issues that must be corrected bef
 
 ---
 
-# User Story
+## User Story
 
 As an Issuance Officer,
 
@@ -42,15 +43,15 @@ so that incomplete or invalid business information is corrected before the trans
 
 ---
 
-# Business Value
+## Business Value
 
 Improves transaction quality and reduces avoidable review delays and downstream processing errors.
 
 ---
 
-# Scope
+## Scope
 
-## Included
+### Included
 
 - Authorize validation of a Draft transaction
 - Apply required-field validation
@@ -63,7 +64,7 @@ Improves transaction quality and reduces avoidable review delays and downstream 
 - Invalidate previous results following material changes
 - Make successfully validated transactions eligible for submission
 
-## Excluded
+### Excluded
 
 - Creation of the initial Draft transaction
 - Submission into the approval workflow
@@ -76,36 +77,36 @@ Improves transaction quality and reduces avoidable review delays and downstream 
 
 ---
 
-# Related Artifacts
+## Related Artifacts
 
-## Parent Feature
+### Parent Feature
 
 - [[FEATURE-E6-01-propose-and-approve-debt-transaction]]
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 - [[AC-E6-102]]
 
-## Business Rules
+### Business Rules
 
 - [[BR-FEATURE-E6-01]]
 
-## Related Diagrams
+### Related Diagrams
 
 - [[E6-01A-propose-and-approve-debt-transaction-business-activity-view]]
 - [[E6-01D2-propose-and-approve-debt-transaction-business-decision-flow]]
 - [[E6-01E-propose-and-approve-debt-transaction-information-evolution]]
 
-## Previous Story
+### Previous Story
 
 - [[US-E6-101-propose-new-debt-transaction]]
 
-## Next Story
+### Next Story
 
 - [[US-E6-103-submit-transaction-for-approval]]
 
 ---
 
-# Notes
+## Notes
 
 A validation result must remain current. Material changes to transaction information require the transaction to be validated again before submission.

@@ -1,24 +1,26 @@
 ---
 id: EPIC-E6
 project: farm-credit-ba-exercise
+
 type: epic
 status: draft
+
+description: Enable the organization to propose, approve, issue, and settle debt securities through a controlled and auditable business process.
 
 categories:
   - "[[Epics]]"
   - "[[Requirements]]"
   - "[[Reference Exercises]]"
-
 tags:
   - farm-credit
+  - requirements
   - debt-issuance
   - security-settlement
   - business-analysis
   - interview-study
 
-description: Enable the organization to propose, approve, issue, and settle debt securities through a controlled and auditable business process.
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 # EPIC-E6 — Issue and Settle Security

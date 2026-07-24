@@ -1,20 +1,25 @@
 ---
 id: US-E6-402
-type: user-story
+project: farm-credit-ba-exercise
+
+type: story
 status: draft
 
-feature: FEATURE-E6-04
+description: Enables a Settlement Operations Analyst to create validated settlement instructions for confirmed dealer transactions.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
-
-description: Enables a Settlement Operations Analyst to create validated settlement instructions for confirmed dealer transactions.
+  - farm-credit
+  - requirements
 
 created: 2026-07-23
 updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-04
 ---
 
 # US-E6-402 Create Settlement Instructions

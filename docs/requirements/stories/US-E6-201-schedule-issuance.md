@@ -1,20 +1,25 @@
 ---
 id: US-E6-201
-type: user-story
+project: farm-credit-ba-exercise
+
+type: story
 status: draft
 
-feature: FEATURE-E6-02
+description: Schedule an approved debt transaction as a proposed issuance.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
+  - farm-credit
+  - requirements
 
-description: Schedule an approved debt transaction as a proposed issuance.
+created: 2026-07-23
+updated: 2026-07-23
 
-created:
-updated:
+epic: EPIC-E6
+feature: FEATURE-E6-02
 ---
 
 # US-E6-201 Schedule Issuance
@@ -25,7 +30,7 @@ Capture the required scheduling information for an approved debt transaction bef
 
 ---
 
-# User Story
+## User Story
 
 As an Issuance Officer,
 
@@ -35,13 +40,13 @@ so that the proposed issuance can be validated and prepared for booking.
 
 ---
 
-# Business Value
+## Business Value
 
 Scheduling converts an approved debt transaction into an operationally actionable planned issuance and provides the information needed for validation and downstream preparation.
 
 ---
 
-# Preconditions
+## Preconditions
 
 - The debt transaction has received the required approvals
 - Required transaction information is available
@@ -49,9 +54,9 @@ Scheduling converts an approved debt transaction into an operationally actionabl
 
 ---
 
-# Scope
+## Scope
 
-## Included
+### Included
 
 - Select the approved debt transaction
 - Enter the proposed issuance date
@@ -62,7 +67,7 @@ Scheduling converts an approved debt transaction into an operationally actionabl
 - Record the responsible business area
 - Save the issuance in a scheduled or preliminary state
 
-## Excluded
+### Excluded
 
 - Issuance-window validation
 - Funding-capacity reservation
@@ -72,20 +77,20 @@ Scheduling converts an approved debt transaction into an operationally actionabl
 
 ---
 
-# Related Artifacts
+## Related Artifacts
 
-## Parent Feature
+### Parent Feature
 
 - [[FEATURE-E6-02-schedule-and-book-issuance]]
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 - [[AC-E6-201]]
 
-## Business Rules
+### Business Rules
 
 - [[BR-FEATURE-E6-02]]
 
 ---
 
-# Notes
+## Notes

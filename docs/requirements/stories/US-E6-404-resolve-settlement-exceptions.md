@@ -1,20 +1,25 @@
 ---
 id: US-E6-404
-type: user-story
+project: farm-credit-ba-exercise
+
+type: story
 status: draft
 
-feature: FEATURE-E6-04
+description: Enables a Settlement Operations Analyst to identify, investigate, and resolve settlement exceptions before settlement completion.
 
 categories:
   - "[[Stories]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
-
-description: Enables a Settlement Operations Analyst to identify, investigate, and resolve settlement exceptions before settlement completion.
+  - farm-credit
+  - requirements
 
 created: 2026-07-23
 updated: 2026-07-23
+
+epic: EPIC-E6
+feature: FEATURE-E6-04
 ---
 
 # US-E6-404 Resolve Settlement Exceptions

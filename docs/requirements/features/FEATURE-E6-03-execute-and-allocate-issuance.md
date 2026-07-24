@@ -1,20 +1,24 @@
 ---
 id: FEATURE-E6-03
+project: farm-credit-ba-exercise
+
 type: feature
 status: draft
 
-epic: E6
+description: Execute a booked issuance, receive dealer orders, allocate securities, and prepare execution results for settlement.
 
 categories:
   - "[[Features]]"
   - "[[Requirements]]"
-
+  - "[[Reference Exercises]]"
 tags:
+  - farm-credit
+  - requirements
 
-description: Execute a booked issuance, receive dealer orders, allocate securities, and prepare execution results for settlement.
+created: 2026-07-23
+updated: 2026-07-23
 
-created:
-updated:
+epic: EPIC-E6
 ---
 
 # FEATURE-E6-03 Execute and Allocate Issuance
@@ -25,19 +29,19 @@ Execute a booked debt issuance, collect dealer participation, allocate securitie
 
 ---
 
-# Feature Description
+## Feature Description
 
 After a planned issuance has been booked, the issuance is executed in the market. Dealer orders are received, evaluated, and allocated. The resulting execution information becomes the authoritative input for settlement and post-trade processing.
 
 ---
 
-# Business Objective
+## Business Objective
 
 Execute an approved issuance while ensuring accurate allocation, traceability, and operational control.
 
 ---
 
-# Business Value
+## Business Value
 
 - Records executed issuance activity
 - Supports fair and auditable allocation
@@ -46,7 +50,7 @@ Execute an approved issuance while ensuring accurate allocation, traceability, a
 
 ---
 
-# Primary Actors
+## Primary Actors
 
 - Issuance Officer
 - Funding Operations Analyst
@@ -55,7 +59,7 @@ Execute an approved issuance while ensuring accurate allocation, traceability, a
 
 ---
 
-# Preconditions
+## Preconditions
 
 - Planned issuance has been booked
 - Security identifier exists
@@ -63,15 +67,15 @@ Execute an approved issuance while ensuring accurate allocation, traceability, a
 
 ---
 
-# Trigger
+## Trigger
 
 A booked planned issuance is ready for market execution.
 
 ---
 
-# Scope
+## Scope
 
-## Included
+### Included
 
 - Execute issuance
 - Receive dealer participation
@@ -79,7 +83,7 @@ A booked planned issuance is ready for market execution.
 - Record execution results
 - Prepare settlement input
 
-## Excluded
+### Excluded
 
 - Issuance planning
 - Booking
@@ -89,7 +93,7 @@ A booked planned issuance is ready for market execution.
 
 ---
 
-# Functional Flow
+## Functional Flow
 
 1. Execute issuance.
 2. Receive dealer participation.
@@ -99,7 +103,7 @@ A booked planned issuance is ready for market execution.
 
 ---
 
-# Stories
+## Stories
 
 - [[US-E6-301-execute-issuance]]
 - [[US-E6-302-receive-dealer-orders]]
@@ -109,16 +113,16 @@ A booked planned issuance is ready for market execution.
 
 ---
 
-# Business Rules
+## Business Rules
 
 - [[BR-FEATURE-E6-03]]
 
 ---
 
-# Review
+## Review
 
 - [[REVIEW-FEATURE-E6-03-requirements-walkthrough]]
 
 ---
 
-# Notes
+## Notes
