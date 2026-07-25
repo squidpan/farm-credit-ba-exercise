@@ -87,7 +87,7 @@ This story excludes:
 
 ### Next Story
 
-- [[US-E6-601-manage-security-lifecycle-events]]
+- Planned future lifecycle Story under FEATURE-E6-06; artifact not yet created.
 
 ## Notes
 

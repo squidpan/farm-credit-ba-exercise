@@ -103,19 +103,18 @@ A booked planned issuance is ready for market execution.
 
 ---
 
+## Business Rules
+
+- [[BR-FEATURE-E6-03]]
+
+---
+
 ## Stories
 
 - [[US-E6-301-execute-issuance]]
 - [[US-E6-302-receive-dealer-orders]]
 - [[US-E6-303-allocate-securities]]
 - [[US-E6-304-record-execution-results]]
-- [[US-E6-305-release-to-settlement]]
-
----
-
-## Business Rules
-
-- [[BR-FEATURE-E6-03]]
 
 ---
 
@@ -124,5 +123,11 @@ A booked planned issuance is ready for market execution.
 - [[REVIEW-FEATURE-E6-03-requirements-walkthrough]]
 
 ---
+
+## Related Artifacts
+
+- [[EPIC-E6-issue-and-settle-security]]
+- [[FEATURE-E6-02-schedule-and-book-issuance]]
+- [[REVIEW-FEATURE-E6-03-requirements-walkthrough]]
 
 ## Notes

@@ -141,20 +141,22 @@ TAG_PATTERN = re.compile(
 
 CANONICAL_SECTIONS = {
     "epic": [
-        "Purpose",
+        "TL;DR",
         "Business Objective",
+        "Business Value",
         "Scope",
         "Success Criteria",
         "Features",
-        "Notes",
+        "Related Artifacts",
     ],
     "feature": [
-        "Purpose",
+        "TL;DR",
+        "Business Objective",
         "Business Value",
         "Scope",
         "Business Rules",
         "Stories",
-        "Notes",
+        "Related Artifacts",
     ],
     "story": [
         "TL;DR",
@@ -162,25 +164,24 @@ CANONICAL_SECTIONS = {
         "Business Value",
         "Scope",
         "Related Artifacts",
-        "Notes",
     ],
     "acceptance-criteria": [
-        "Purpose",
         "Acceptance Criteria",
-        "Related Story",
+        "Related Artifacts",
     ],
     "business-rule": [
-        "Purpose",
+        "TL;DR",
         "Business Rules",
-        "Rationale",
-        "Impact",
+        "Related Artifacts",
     ],
     "review": [
+        "TL;DR",
         "Purpose",
         "Scope Reviewed",
         "Findings",
         "Decisions",
         "Follow-up Actions",
+        "Related Artifacts",
     ],
 }
 
@@ -972,11 +973,19 @@ def validate_body(
             + ", ".join(missing_sections),
         )
 
-    if present_expected != [
+    present_in_document_order = [
+        section
+        for section in h2_titles
+        if section in expected_sections
+    ]
+
+    expected_present_order = [
         section
         for section in expected_sections
-        if section in present_expected
-    ]:
+        if section in h2_titles
+    ]
+
+    if present_in_document_order != expected_present_order:
         add_finding(
             artifact,
             level,
@@ -1064,6 +1073,72 @@ def validate_relationship_targets(
                     f"a {expected_target_type}; "
                     f"{target_id} is "
                     f"{target.artifact_type}",
+                )
+
+
+GOVERNED_WIKI_LINK_PATTERN = re.compile(
+    r"^("
+    r"EPIC-E\d+"
+    r"|FEATURE-E\d+-\d{2}"
+    r"|US-E\d+-\d{3}"
+    r"|AC-E\d+-\d{3}"
+    r"|BR-FEATURE-E\d+-\d{2}"
+    r"|REVIEW-FEATURE-E\d+-\d{2}"
+    r")(?:-|$)"
+)
+
+
+def validate_governed_wiki_links(
+    artifacts: list[Artifact],
+    by_id: dict[str, Artifact],
+) -> None:
+    # Validate governed-artifact-looking wiki links in visible body text.
+    filename_stems = {
+        artifact.path.stem: artifact
+        for artifact in artifacts
+    }
+
+    for artifact in artifacts:
+        visible_lines = extract_visible_lines(
+            artifact.body.splitlines()
+        )
+
+        for line_number, line in enumerate(
+            visible_lines,
+            start=1,
+        ):
+            for match in re.finditer(
+                r"\[\[([^\]]+)\]\]",
+                line,
+            ):
+                raw_target = match.group(1).strip()
+                target = raw_target.split("|", 1)[0].strip()
+
+                governed_match = (
+                    GOVERNED_WIKI_LINK_PATTERN.match(target)
+                )
+
+                if governed_match is None:
+                    continue
+
+                artifact_id = governed_match.group(1)
+
+                if (
+                    artifact_id in by_id
+                    and (
+                        target == artifact_id
+                        or target in filename_stems
+                    )
+                ):
+                    continue
+
+                add_finding(
+                    artifact,
+                    "ERROR",
+                    "wiki link references nonexistent "
+                    "governed artifact: "
+                    f"[[{raw_target}]] "
+                    f"(visible body line {line_number})",
                 )
 
 
@@ -1322,6 +1397,11 @@ def main() -> int:
     )
 
     validate_relationship_targets(
+        artifacts,
+        by_id,
+    )
+
+    validate_governed_wiki_links(
         artifacts,
         by_id,
     )

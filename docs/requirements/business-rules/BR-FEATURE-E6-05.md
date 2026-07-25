@@ -180,4 +180,4 @@ Every material post-trade reporting action must record who or what performed the
 
 ### Next Business Rules
 
-- [[BR-FEATURE-E6-06]]
+- Planned future lifecycle Business Rules for FEATURE-E6-06; artifact not yet created.

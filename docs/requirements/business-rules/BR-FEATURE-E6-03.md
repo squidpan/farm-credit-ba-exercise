@@ -24,6 +24,10 @@ feature: FEATURE-E6-03
 
 # BR-FEATURE-E6-03 Execute and Allocate Issuance
 
+## TL;DR
+
+Defines the eligibility, execution, dealer-order, allocation, and execution-record rules governing FEATURE-E6-03.
+
 ## Purpose
 
 Define the business rules that govern execution of a booked issuance, receipt of dealer orders, allocation of securities, and creation of the final execution record.

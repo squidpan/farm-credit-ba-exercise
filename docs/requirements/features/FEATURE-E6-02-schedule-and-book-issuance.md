@@ -113,6 +113,12 @@ An approved debt transaction is ready to be scheduled for issuance.
 
 ---
 
+## Business Rules
+
+- [[BR-FEATURE-E6-02]]
+
+---
+
 ## Stories
 
 - [[US-E6-201-schedule-issuance]]
@@ -133,17 +139,17 @@ An approved debt transaction is ready to be scheduled for issuance.
 
 ---
 
-## Business Rules
-
-- [[BR-FEATURE-E6-02]]
-
----
-
 ## Review
 
 - [[REVIEW-FEATURE-E6-02-requirements-walkthrough]]
 
 ---
+
+## Related Artifacts
+
+- [[EPIC-E6-issue-and-settle-security]]
+- [[FEATURE-E6-01-propose-and-approve-debt-transaction]]
+- [[REVIEW-FEATURE-E6-02-requirements-walkthrough]]
 
 ## Completion Conditions
 

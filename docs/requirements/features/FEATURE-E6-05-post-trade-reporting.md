@@ -31,6 +31,10 @@ Enable authorized business and operations users to generate, validate, distribut
 
 Provide complete and traceable reporting of issuance, allocation, confirmation, and settlement activity so that internal stakeholders, control functions, and external recipients receive accurate and timely post-trade information.
 
+## Business Value
+
+Supports accurate operational oversight, financial control, compliance, management reporting, and audit review by providing timely and traceable post-trade information.
+
 ## Business Context
 
 After an issuance has been executed, allocated, confirmed, and settled, the resulting transaction information must be transformed into reports suitable for operational oversight, financial control, compliance, management reporting, and audit review.
@@ -105,7 +109,11 @@ This feature does not include:
 9. Archive the report and preserve generation, delivery, and reconciliation history.
 10. Make approved reporting information available for downstream use.
 
-## Proposed Stories
+## Business Rules
+
+- [[BR-FEATURE-E6-05]]
+
+## Stories
 
 ### US-E6-501 Generate Post-Trade Reports
 
@@ -175,7 +183,7 @@ The feature must ensure that:
 
 ### Downstream
 
-- [[FEATURE-E6-06-manage-security-lifecycle-events]]
+- Planned future capability: FEATURE-E6-06 — Manage Security Lifecycle Events (artifact not yet created)
 
 ## Related Artifacts
 
@@ -184,8 +192,9 @@ The feature must ensure that:
 - [[US-E6-501-generate-post-trade-reports]]
 - [[US-E6-502-publish-reports-to-internal-stakeholders]]
 - [[US-E6-503-deliver-compliance-and-regulatory-reports]]
-- [[US-E6-504-reconcile-reported-activity]]
-- [[US-E6-505-archive-reports-and-audit-history]]
+- [[US-E6-504-reconcile-post-trade-reporting-data]]
+- [[US-E6-505-resolve-and-track-reporting-discrepancies]]
+- [[US-E6-506-archive-post-trade-reporting-records]]
 
 ### Acceptance Criteria
 
@@ -194,6 +203,7 @@ The feature must ensure that:
 - [[AC-E6-503]]
 - [[AC-E6-504]]
 - [[AC-E6-505]]
+- [[AC-E6-506]]
 
 ### Business Rules
 
@@ -201,4 +211,4 @@ The feature must ensure that:
 
 ### Requirements Review
 
-- [[REVIEW-FEATURE-E6-05-requirements-walkthrough]]
+- [[REVIEW-FEATURE-E6-05]]

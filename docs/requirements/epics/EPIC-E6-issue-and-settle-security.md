@@ -25,6 +25,10 @@ updated: 2026-07-23
 
 # EPIC-E6 — Issue and Settle Security
 
+## TL;DR
+
+Provide a controlled, traceable, and auditable business lifecycle for proposing, approving, issuing, settling, and reporting debt securities.
+
 ## Business Objective
 
 Enable authorized business users to propose, review, approve, issue, and settle debt securities through a controlled, traceable, and auditable business process.
@@ -78,11 +82,7 @@ The current exercise does not yet define:
 - technical architecture
 - production deployment design
 
-## Features
-
-- [[FEATURE-E6-01-propose-and-approve-debt-transaction]]
-
-## Success Measures
+## Success Criteria
 
 The Epic is successful when:
 
@@ -94,6 +94,14 @@ The Epic is successful when:
 - corrected transactions can be resubmitted
 - approved transactions are ready for downstream issuance
 - material actions and decisions are auditable
+
+## Features
+
+- [[FEATURE-E6-01-propose-and-approve-debt-transaction]]
+- [[FEATURE-E6-02-schedule-and-book-issuance]]
+- [[FEATURE-E6-03-execute-and-allocate-issuance]]
+- [[FEATURE-E6-04-confirm-and-settle-issuance]]
+- [[FEATURE-E6-05-post-trade-reporting]]
 
 ## Key Actors
 
@@ -111,3 +119,7 @@ The Epic is successful when:
 - [[E6-01E-propose-and-approve-debt-transaction-information-evolution]]
 - [[E6-01F-v1-propose-and-approve-debt-transaction-business-control-map-detailed]]
 - [[E6-01F-v2-propose-and-approve-debt-transaction-business-control-map-compact]]
+
+## Related Artifacts
+
+- [[E6-00-issue-and-settle-security-500-foot-business-view]]

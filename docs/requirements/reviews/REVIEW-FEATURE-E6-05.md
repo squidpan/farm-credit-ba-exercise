@@ -28,7 +28,11 @@ feature: FEATURE-E6-05
 
 The E6-05 Post-Trade Reporting feature, stories, acceptance criteria, and business rules form a complete and internally consistent requirements set suitable for study and continued lifecycle elaboration.
 
-## Review Scope
+## Purpose
+
+Evaluate the E6-05 requirements set for completeness, internal consistency, traceability, and readiness for continued lifecycle elaboration.
+
+## Scope Reviewed
 
 The review covers:
 
@@ -47,7 +51,7 @@ The review covers:
 - [[AC-E6-506]]
 - [[BR-FEATURE-E6-05]]
 
-## Review Findings
+## Findings
 
 ### RF-E6-05-01 — Feature Coverage
 
@@ -165,11 +169,15 @@ The following items remain appropriate for later product, compliance, or technic
 
 These open questions do not prevent approval of the current business requirements baseline.
 
-## Review Decision
+## Decisions
 
 **Decision:** Approved
 
 The E6-05 Post-Trade Reporting requirements set is approved as a coherent business-analysis baseline.
+
+## Follow-up Actions
+
+Carry the documented open questions into later product, compliance, and technical refinement.
 
 ## Related Artifacts
 
@@ -183,8 +191,8 @@ The E6-05 Post-Trade Reporting requirements set is approved as a coherent busine
 
 ### Previous Review
 
-- [[REVIEW-FEATURE-E6-04]]
+- [[REVIEW-FEATURE-E6-04-requirements-walkthrough]]
 
 ### Next Review
 
-- [[REVIEW-FEATURE-E6-06]]
+- Planned future lifecycle review for FEATURE-E6-06; artifact not yet created.

@@ -26,6 +26,12 @@ feature: FEATURE-E6-01
 
 # BR-FEATURE-E6-01 — Business Rules for FEATURE-E6-01
 
+## TL;DR
+
+Defines the authorization, validation, approval, resubmission, history, and audit rules governing proposed debt transactions.
+
+## Business Rules
+
 | Rule ID | Business Rule |
 |---------|---------------|
 | BR-E6-001 | Only authorized Issuance Officers may create Draft debt transactions. |
@@ -37,11 +43,13 @@ feature: FEATURE-E6-01
 | BR-E6-007 | A corrected transaction must be revalidated before resubmission. |
 | BR-E6-008 | Every submission and approval decision must create an auditable record. |
 
-## Related Feature
+## Related Artifacts
+
+### Related Feature
 
 - [[FEATURE-E6-01-propose-and-approve-debt-transaction]]
 
-## Related Stories
+### Related Stories
 
 - [[US-E6-101-propose-new-debt-transaction]]
 - [[US-E6-102-validate-proposed-transaction]]

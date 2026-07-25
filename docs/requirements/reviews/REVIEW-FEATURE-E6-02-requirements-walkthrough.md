@@ -30,7 +30,7 @@ Walk through the complete FEATURE-E6-02 requirements package and confirm that th
 
 ---
 
-## Review Objective
+## Purpose
 
 Confirm that the requirements for scheduling and booking an issuance:
 
@@ -43,7 +43,7 @@ Confirm that the requirements for scheduling and booking an issuance:
 
 ---
 
-## Artifacts in Scope
+## Scope Reviewed
 
 ### Feature
 
@@ -247,7 +247,7 @@ The requirements package requires material revision and another walkthrough.
 
 ---
 
-## Action Items
+## Follow-up Actions
 
 | ID | Action | Owner | Due Date | Status |
 |---|---|---|---|---|

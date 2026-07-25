@@ -35,6 +35,12 @@ Provide a controlled and auditable settlement process that converts executed dea
 
 ---
 
+## Business Value
+
+Improves settlement accuracy, operational control, exception visibility, and auditability while supporting timely completion of securities and funds exchange.
+
+---
+
 ## Business Context
 
 Feature E6-03 completes execution and allocation of securities to dealers.
@@ -63,7 +69,7 @@ Feature E6-04 begins once execution has been finalized and the issuance is ready
 
 ---
 
-## Feature Scope
+## Scope
 
 ### Included
 
@@ -88,7 +94,11 @@ Feature E6-04 begins once execution has been finalized and the issuance is ready
 
 ---
 
-## Proposed Stories
+## Business Rules
+
+- [[BR-FEATURE-E6-04]]
+
+## Stories
 
 - US-E6-401 Confirm Dealer Transactions
 - US-E6-402 Create Settlement Instructions

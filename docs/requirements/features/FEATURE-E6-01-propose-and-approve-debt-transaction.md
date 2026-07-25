@@ -27,9 +27,17 @@ epic: EPIC-E6
 
 # FEATURE-E6-01 — Propose and Approve Debt Transaction
 
-## Feature Objective
+## TL;DR
+
+Allow an authorized Issuance Officer to create and validate a proposed debt transaction and route it through independent review, correction, resubmission, and approval.
+
+## Business Objective
 
 Provide a controlled business workflow for creating, validating, submitting, reviewing, returning, correcting, resubmitting, and approving a proposed debt transaction.
+
+## Business Value
+
+Reduces the risk of incomplete, invalid, or unauthorized debt transactions proceeding to issuance while preserving independent approval and an auditable decision history.
 
 ## Parent Epic
 
@@ -45,7 +53,7 @@ The process must support both the successful approval path and the return-for-co
 
 An approved transaction contains the information and approval evidence needed to proceed to downstream issuance and settlement activities.
 
-## In Scope
+## Scope
 
 This Feature includes:
 
@@ -149,7 +157,7 @@ The Issuance Officer identifies the need to propose a new debt transaction.
 7. The platform records the new submitted version.
 8. The transaction returns to Pending Approval.
 
-## Business Controls
+## Business Rules
 
 - Only authorized users may create or approve transactions.
 - A proposer may not approve the same transaction.
@@ -159,7 +167,7 @@ The Issuance Officer identifies the need to propose a new debt transaction.
 - Approval must record the approver and decision timestamp.
 - Material changes and status transitions must be auditable.
 
-## Proposed Story Decomposition
+## Stories
 
 - [[US-E6-101-propose-new-debt-transaction]]
 - [[US-E6-102-validate-proposed-transaction]]
@@ -178,7 +186,7 @@ The Issuance Officer identifies the need to propose a new debt transaction.
 - [[E6-01F-v1-propose-and-approve-debt-transaction-business-control-map-detailed]]
 - [[E6-01F-v2-propose-and-approve-debt-transaction-business-control-map-compact]]
 
-## Supporting Requirements Artifacts
+## Related Artifacts
 
 - [[BR-FEATURE-E6-01]]
-- [[REVIEW-FEATURE-E6-01-requirements-walkthrough]]
+- [[REVIEW-FEATURE-E6-01]]

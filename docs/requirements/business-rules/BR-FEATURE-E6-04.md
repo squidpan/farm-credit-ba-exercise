@@ -24,6 +24,10 @@ feature: FEATURE-E6-04
 
 # BR-FEATURE-E6-04 Confirm and Settle Issuance
 
+## TL;DR
+
+Defines the confirmation, settlement-instruction, monitoring, exception, and completion rules governing FEATURE-E6-04.
+
 ## Purpose
 
 Define the business constraints that govern dealer-transaction confirmation, settlement-instruction creation and submission, settlement-status monitoring, exception resolution, and final settlement completion for an issuance.
